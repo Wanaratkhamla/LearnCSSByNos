@@ -1,0 +1,136 @@
+/*p{
+	color: blue;
+	background-color: green;
+	font-size: 50px;
+	text-indent: 50px;
+	width: 70%;
+}*/
+.p2{
+	background-color: yellow;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#p1{
+	color:red;
+	font-size: 30px;
+}
+		
+.p1{
+	background-color: pink;
+	text-align: center;
+	text-decoration: line-through;
+
+}
+h1{
+	color: red;
+}
+
+.Facebookfile{
+	background-color: red;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+}
+.Facebookfile:hover{
+	text-decoration: underline;
+}
+
+.TestCSSbg{
+	width: 1000px;
+	height: 50px;
+	background-color: blue;
+	background-image: url("test.png");
+	border: solid 3px black;
+	text-align: center;
+	background-repeat: no-repeat; /* ใช้กับการที่รูปมีการทำซ้ำ เช่นเล็กเกินไป ก็จะทำให้เต็มช่อง บังคับไม่ให้ทำซ้ำ*/
+	text-indent: 50px;
+	margin-left: 13%;
+
+}
+.BasicBorder{
+	width: 500px;
+	height: 50px;
+	border: yellow 5px double;
+	text-align: center;
+	margin-left: 30%;
+	font-size: 30px;
+	color: red;
+	border-top-right-radius: 20px;
+	outline-style: dotted;
+	outline-color: green;
+}
+
+@keyframes test{
+	33%{
+		opacity: 0.5;
+	}
+	66%{
+		opacity: 1.0;
+	}
+	99%{
+		opacity: 0.5;
+	}
+}
+
+.Border{
+	width: 600px;
+	height :300px;
+	border: red 4px double;
+	opacity: 0.5;
+	animation-name: test;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.Border:hover{
+	opacity: 1.0;
+}
+
+.CSSGradient{
+	width: 600px;
+	height :300px;
+	border: red 4px double;
+	background: radial-gradient(red,blue); /* ใช้ linear จะเป็นแบบเส้น*/
+	box-shadow: 10px 10px black;
+	transition: width 3s,height 3s,transform 2s; /*หน่วงเวลาการทำงาน*/
+}
+
+.CSSGradient:hover{
+	width: 500px;
+	height: 150px;
+	transform: translate(500px,0px); /*แกน x และ y*/
+}
+
+
+
+#GD{
+	color: pink;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 4px 4px red;
+}
+
+.TestTransform{
+	width: 300px;
+	height: 100px;
+	border :yellow 4px double;
+	transition: width 2s, transform 2s;
+}
+
+.TestTransform:hover{
+	width: 400px;
+	height: 200px;
+	transform: translate(500px,0px);
+	
+}
+
+
+/*
+	background-repeat: repeat-x;  ทำซ้ำแนวแกน X
+	background-repeat: repeat-y;  ทำซ้ำแนวแกน y
+	transition delay หน่วงการทำงาน
+	transform: rotate(90deg); เปลี่ยนรูปร่างให้หมุนได้
+	transform: skewX(180deg); หมุนอย่างเร็ว ตามดีกรี
+*/
+
